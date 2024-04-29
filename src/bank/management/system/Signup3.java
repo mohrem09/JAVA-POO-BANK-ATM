@@ -22,7 +22,8 @@ public class Signup3 extends JFrame implements ActionListener{
         this.formno = formno;
         setTitle("NEW ACCOUNT APPLICATION FORM - PAGE 3");
     
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("ASimulatorSystem/icons/logo.jpg"));
+        String resourcePath = "icons/logo.jpg";
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource(resourcePath));
         Image i2 = i1.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel l14 = new JLabel(i3);
